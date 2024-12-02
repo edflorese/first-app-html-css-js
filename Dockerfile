@@ -11,7 +11,7 @@ COPY index.html /usr/src/app/index.html
 RUN npm install -g http-server
 
 # Expose port 8080 to the outside world
-EXPOSE 8080
+EXPOSE 80
 
 # Start the HTTP server to serve the HTML file
-CMD ["http-server", "-p", "8080"]
+CMD ["http-server", "-p", "80"]
